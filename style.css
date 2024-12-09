@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #faf4ed;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-family: "Anybody", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 3vw, 30px);
+  line-height: clamp(30px, 4vw, 50px);
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: italic;
+  line-height: clamp(30px, 4vw, 50px);
+  font-size: clamp(0.8rem, 2vw, 19px);
+}
+
+footer {
+  margin-bottom: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: clamp(0.8rem, 2vw, 19px);
+  padding-top: 2rem;
+}
+
+h3 {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8vw;
+  color: #fffaf3;
+}
+
+h1 {
+  font-family: "Arial", sans-serif; /* Standard font for teksten */
+}
+
+.font1 {
+  font-family: "Anybody", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; /* Font 1 */
+  font-size: clamp(1.5rem, 3vw, 75px); /* Font 2 */
+  color: #a5b5dc;
+}
+
+.font2 {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 6vw, 90px); /* Font 2 */
+  color: #6d86c2;
+}

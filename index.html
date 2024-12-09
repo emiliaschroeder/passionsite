@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <!-- H1 font cursiv: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=IM+Fell+Double+Pica:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Sintony:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- H2 + H1 font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anybody:ital,wght@0,100..900;1,100..900&family=Baskervville:ital@0;1&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Gayathri:wght@100;400;700&family=IM+Fell+Double+Pica:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Sintony:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Passionsite</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"> <img src="billeder/logo.svg" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#videomateriale">Videomateriale</a></li>
+          <li><a href="#billedgalleri">Billedgalleri</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="lottie">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/36d1a75b-6a5b-45f9-8d65-e56eaa3fa3ab/3sd3i8qs7i.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+      </div>
+    </section>
+    <main>
+      <div class="grid_1-1">
+        <div>
+          <h1><span class="font1">Passion for</span> <span class="font2">Filmproduktion</span></h1>
+          <h2>Historier skabt i fællesskab.</h2>
+          <p>For Viola er filmproduktion en magisk proces, hvor forskellige kompetencer smelter sammen mod et fælles mål. Følelsen på settet er intens og kaotisk, men når der siges 'Værsgo', samles alt om den fælles vision. Det handler om at bringe ideer til live og dele sit unikke perspektiv gennem samarbejde og kreativitet.</p>
+        </div>
+        <div class="img_tekst">
+          <img src="billeder/billede1.jpg" alt="" class="billede_1" />
+          <h3>Viola</h3>
+        </div>
+      </div>
+
+      <h2>Billedgalleri</h2>
+      <div class="grid_1-1-1" id="billedgalleri">
+        <img src="billeder/billede2.jpg" alt="" class="billede_2" />
+        <img src="billeder/billede3.jpg" alt="" class="billede_3" />
+        <img src="billeder/billede4.jpg" alt="" class="billede_4" />
+        <img src="billeder/billede5.jpg" alt="" class="billede_5" />
+        <!-- Billederne skal styles i css -->
+      </div>
+
+      <h2>Videomateriale</h2>
+
+      <div class="grid_1-1" id="videomateriale">
+        <!-- Video tag -->
+        <video controls class="video" src="passion_video.mp4"></video>
+
+        <!-- Video embed -->
+        <iframe class="video-embed" src="https://www.youtube.com/embed/GbPPOhSJU1g?si=bHKMxoFhwFH8RdLo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer>Lavet af Emilia Taylor Schrøder</footer>
+    <script src="menu.js"></script>
+  </body>
+</html>

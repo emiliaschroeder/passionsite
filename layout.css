@@ -1,0 +1,106 @@
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* To kolonner */
+  grid-template-rows: repeat(2, 1fr); /* To rækker */
+  gap: 1rem;
+  aspect-ratio: 1 / 1;
+  padding-bottom: 2rem;
+}
+
+.grid_1-1 {
+  gap: 30px;
+  padding-bottom: 2rem;
+}
+
+.img_tekst {
+  display: grid;
+  align-items: last baseline;
+}
+.img_tekst > * {
+  grid-column: 2;
+  grid-row: 2;
+}
+.billede_1,
+.billede_2,
+.billede_3,
+.billede_4,
+.billede_5 {
+  align-self: stretch;
+  width: 100%; /* Får billederne til at fylde hver firkant */
+  height: 100%; /* Får billederne til at fylde hver firkant */
+  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
+}
+
+.video,
+.video-embed {
+  width: 100%; /* Får elementerne til at fylde hele bredden af deres grid-celle */
+  aspect-ratio: 16 / 9; /* Beholder standard videoformat */
+}
+
+.video-embed {
+  border: none; /* Fjerner kant på iframe */
+}
+
+.lottie {
+  max-width: 100%;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 4rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .billede_2 {
+    grid-column: 1 / span 1; /* Strækker sig over den første kolonne */
+    grid-row: 1 / span 2; /* Strækker sig over to rækker */
+  }
+
+  .billede_3 {
+    grid-column: 2 / span 2; /* I den anden kolonne */
+    grid-row: 1 / span 1; /* I den første række */
+  }
+
+  .billede_4 {
+    grid-column: 2 / span 1; /* I den anden kolonne */
+    grid-row: 2 / span 1; /* I den anden række */
+  }
+
+  .billede_5 {
+    grid-column: 3 / span 1; /* I den anden kolonne */
+    grid-row: 2 / span 1; /* I den tredje række */
+  }
+
+  .billede_1,
+  .billede_2,
+  .billede_3,
+  .billede_4,
+  .billede_5 {
+    object-fit: cover;
+    align-self: stretch;
+  }
+  .video {
+    max-width: 100%;
+  }
+
+  h2 {
+    padding-bottom: 1rem;
+  }
+}
